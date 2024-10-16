@@ -2,7 +2,7 @@ return {
 	{
 		"rcarriga/nvim-notify",
 		dependencies = { "rcarriga/nvim-notify" },
-		config = function(_, opts)
+		config = function()
 			local job = require("plenary.job")
 			job:new({
 				command = "curl",
