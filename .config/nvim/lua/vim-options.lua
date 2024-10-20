@@ -7,13 +7,14 @@ vim.g.mapleader = " "
 vim.keymap.set({ "n", "v" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
 vim.keymap.set({ "n", "v" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
 
-vim.opt.swapfile = false
 vim.wo.number = true
 vim.wo.wrap = true
 vim.wo.linebreak = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "number"
+vim.opt.swapfile = false
+vim.opt.laststatus = 3
 vim.api.nvim_set_option("clipboard", "unnamed")
 
 -- Navigate vim panes better
