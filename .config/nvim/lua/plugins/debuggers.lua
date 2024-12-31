@@ -5,6 +5,7 @@ return {
 		"nvim-neotest/nvim-nio",
 		"mxsdev/nvim-dap-vscode-js",
 		"mfussenegger/nvim-dap-python",
+		"wojciech-kulik/xcodebuild.nvim",
 	},
 	config = function()
 		local dap = require("dap")
@@ -36,6 +37,11 @@ return {
 				},
 			}
 		end
+
+		-- -- Setup Swift
+		-- local xcodebuild = require("xcodebuild.integrations.dap")
+		-- local codelldbPath = os.getenv("HOME") .. "/tools/extension/adapter/codelldb"
+		-- xcodebuild.setup(codelldbPath)
 
 		-- Setup nvim-dap-python
 		require("dap-python").setup(os.getenv("HOME") .. "/.virtualenvs/debugpy/bin/python")

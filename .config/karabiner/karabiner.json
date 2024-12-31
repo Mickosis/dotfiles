@@ -1,10 +1,12 @@
 {
+    "global": { "show_in_menu_bar": false },
     "profiles": [
         {
             "complex_modifications": {
+                "parameters": { "basic.to_if_alone_timeout_milliseconds": 500 },
                 "rules": [
                     {
-                        "description": "Change caps_lock to Command if pressed with other keys, to escape if pressed alone.",
+                        "description": "Change caps_lock to Ctrl if pressed with other keys, to escape if pressed alone.",
                         "manipulators": [
                             {
                                 "from": {
